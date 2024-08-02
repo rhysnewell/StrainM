@@ -57,6 +57,9 @@ if __name__ == '__main__':
 
     if args.version.startswith('v'):
         raise Exception("--version shouldn't have a leading 'v'")
+    
+    logging.info("building docs")
+    extern.run("python3 build_docs.py")
 
     logging.info("Checking for uncommitted code")
     try:
@@ -83,3 +86,4 @@ if __name__ == '__main__':
     print(extern.run('git tag v{}'.format(args.version)))
 
     logging.info("Now run cargo publish && git push && git push --tags")
+    logging.info("The docker image will need to be built in the docker/ directory after the bioconda package is accepted")

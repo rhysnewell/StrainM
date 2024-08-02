@@ -5,8 +5,8 @@ logo: images/mini_logo.png
 colors:
   main: "#EE592E"
 navigation:
-  - path: docs/installation.md
-  - path: docs/usage
+  - path: docs/Installation.md
+  - path: docs/tools
     children: "*"
   - path: docs/concepts.md
   - path: docs/examples.md
