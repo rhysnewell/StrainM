@@ -1,0 +1,21 @@
+---
+title: Installation
+---
+
+# Installing Lorikeet
+
+## Installation via conda
+Lorikeet can be installed through
+[Bioconda](https://anaconda.org/bioconda/lorikeet-genome). You can use the default conda
+if you prefer but we recommend [mamba](https://mamba.readthedocs.io/) for faster
+installation and better error messages.
+
+```
+mamba create -c bioconda -c conda-forge --name lorikeet lorikeet-genome'>='0.8.2
+```
+
+Test if it works by running
+```
+conda activate lorikeet
+lorikeet -h
+```
